@@ -1,9 +1,9 @@
-# CLAUDE.md — SalonOne LP プロジェクト指示
+# CLAUDE.md — Salon+ LP プロジェクト指示
 
 このファイルは Claude Code がプロジェクトを理解するための指示書です。
 
 ## プロジェクト概要
-サロン・整体院向け経営プラットフォーム「SalonOne」のランディングページ（1ページ完結）。
+サロン・整体院向け経営プラットフォーム「Salon+」のランディングページ（1ページ完結）。
 `index.html` に HTML / CSS / JavaScript をすべて内包し、画像のみ `assets/` から相対パスで参照する構成です。ビルド工程やフレームワークはありません。素の HTML を直接編集します。
 
 ## 編集時のルール
@@ -18,9 +18,10 @@
 高級ホテル／金融系SaaS的な落ち着き。深緑×ゴールド、広い余白、Fraunces（欧文セリフ）＋Zen Kaku Gothic New（和文）。新しい要素も必ずこのトーンに合わせる。
 
 ### ブランド表記
-- 名称は必ず「SalonOne」（スペースなし）。旧称「Salon Base」は使わない。
+- 名称は必ず「Salon+」（旧称：SalonOne / Salon Base は使わない）。
+- ロゴ：`assets/mark-plus.svg`（マークのみ）／`assets/logo-salonplus.svg`（マーク+ワードマーク）
 - コンセプト：これ一つで、サロン経営のすべてを。
-- メッセージ：One Platform. One Management. ／ 経営を、ひとつに。
+- メッセージ：One Platform. One Management. ／ 経営を、ひとつに。 ／ 経営に、＋を。
 
 ### 個人情報・ダミーデータ
 UIモック内の氏名・連絡先はすべてダミー（山田太郎・佐藤花子・090-XXXX-XXXX 等）。
