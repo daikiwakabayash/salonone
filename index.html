@@ -714,7 +714,57 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
   0%,100%{transform:perspective(1600px) rotateY(-8deg) rotateX(3deg) translateY(0)}
   50%{transform:perspective(1600px) rotateY(-8deg) rotateX(3deg) translateY(-6px)}
 }
-@media(max-width:920px){.hero-dash{animation:none}}
+@media(max-width:920px){
+  .hero-dash{animation:none !important;transform:none !important}
+}
+
+/* ============================================================
+   MOBILE FINE TUNING (animations + layout safety)
+   ============================================================ */
+@media(max-width:760px){
+  /* let hero image use full mobile width without 3D tilt */
+  .hero-visual{width:100%}
+  .hero-dash{border-radius:14px;box-shadow:0 24px 50px -20px rgba(0,0,0,.45)}
+  .hero-dash img{width:100%;height:auto}
+  /* hero badge slightly inset so it stays in viewport */
+  .hero-badge{left:8px;right:8px;bottom:-22px;padding:11px 14px;transform:none}
+  .hero-badge .dot{width:9px;height:9px}
+  /* meta numbers: 3 columns equal share */
+  .hero-meta{gap:14px;justify-content:space-between}
+  .hero-meta .m{flex:1;min-width:0}
+  .hero-meta .m b{font-size:22px}
+  .hero-meta .m span{font-size:10.5px;line-height:1.5}
+  /* reduce blob & particle intensity on mobile so text stays crisp */
+  .hero-blobs .blob{filter:blur(70px);opacity:.4}
+  .hero-particles .particle{display:none}
+  .hero-particles .particle:nth-child(3n+1){display:block}
+  /* scroll-cue hidden on mobile already, ensure progress bar visible */
+  .scroll-bar{height:2px}
+  /* offer card: avoid overlap with sticky bar */
+  .offer-card{padding:32px 18px}
+  .offer h2{font-size:22px;line-height:1.4}
+  .price-new .num{font-size:52px}
+  /* showcase image hover lift would feel weird on touch; rely on tap */
+  .show-img:hover{transform:none}
+  /* gallery card hover lift soften on touch devices */
+  .gal-card:hover{transform:translateY(-2px)}
+  /* keep mobile-cta from clipping content */
+  body{padding-bottom:78px !important}
+  /* eyebrow letter spacing slightly tighter so it fits */
+  .eyebrow::before{width:20px}
+  /* concept big italic */
+  .concept .big{font-size:21px;line-height:1.6}
+  /* offer pill row: tighter wrap */
+  .offer-feats{gap:8px}
+  .offer-feats span{font-size:11.5px;padding:6px 11px}
+  /* faq smoother */
+  .faq-item.open .faq-a{max-height:520px}
+}
+
+/* iOS Safari: improve sticky CTA contrast over white sections */
+@supports(-webkit-touch-callout:none){
+  .mobile-cta{background:linear-gradient(180deg,var(--green-2),var(--green))}
+}
 
 /* honor reduced motion */
 @media (prefers-reduced-motion: reduce){
