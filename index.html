@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SalonOne｜これ一つで、サロン経営のすべてを。</title>
+<title>Salon+｜これ一つで、サロン経営のすべてを。</title>
 <meta name="description" content="予約・カルテ・LINE・売上・労務・AI分析・POSまで。店舗運営に必要なすべてを一元化する、サロン経営プラットフォーム。経営を、ひとつに。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,11 +66,15 @@ header.nav.scrolled{
   padding:12px 0;
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:11px}
-.brand .logo-mark{width:40px;height:40px;border-radius:50%;overflow:hidden;border:1.5px solid var(--gold);background:var(--green);flex:none}
-.brand .logo-mark img{width:100%;height:100%;object-fit:cover}
-.brand .logo-txt{font-family:"Fraunces",serif;font-size:23px;font-weight:600;color:var(--green);letter-spacing:.01em}
+.brand{display:flex;align-items:center;gap:13px}
+.brand .logo-mark{width:54px;height:54px;border-radius:50%;overflow:hidden;border:1.5px solid var(--gold);background:var(--bg-warm);flex:none;display:grid;place-items:center;transition:.35s}
+.brand .logo-mark img,.brand .logo-mark svg{width:74%;height:74%;object-fit:contain}
+.brand .logo-txt{font-family:"Fraunces",serif;font-size:30px;font-weight:500;color:var(--green);letter-spacing:.005em;line-height:1}
+header.nav.scrolled .brand .logo-mark{width:46px;height:46px;background:#fff}
+header.nav.scrolled .brand .logo-txt{font-size:26px}
+header.nav:not(.scrolled) .brand .logo-mark{background:#fff}
 header.nav:not(.scrolled) .brand .logo-txt{color:#fff}
+.brand:hover .logo-mark{transform:scale(1.04) rotate(-3deg)}
 .nav-links{display:flex;align-items:center;gap:32px}
 .nav-links a{font-size:14px;font-weight:500;color:var(--green-3);transition:.2s;position:relative}
 .nav-links a:hover{color:var(--gold-2)}
@@ -391,8 +395,10 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
   .wrap{padding:0 18px}
   header.nav{padding:12px 0}
   header.nav.scrolled{padding:10px 0}
-  .brand .logo-mark{width:34px;height:34px}
-  .brand .logo-txt{font-size:20px}
+  .brand .logo-mark{width:44px;height:44px}
+  .brand .logo-txt{font-size:24px}
+  header.nav.scrolled .brand .logo-mark{width:38px;height:38px}
+  header.nav.scrolled .brand .logo-txt{font-size:22px}
   .nav-links{display:none}
   .nav-toggle{display:flex}
 
@@ -802,7 +808,7 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="#" class="brand"><span class="logo-mark"><img src="assets/mark.png" alt=""></span><span class="logo-txt">SalonOne</span></a>
+    <a href="#" class="brand" aria-label="Salon+"><span class="logo-mark"><img src="assets/mark-plus.svg" alt=""></span><span class="logo-txt">Salon+</span></a>
     <nav class="nav-links">
       <a href="#concept">コンセプト</a>
       <a href="#features">機能</a>
@@ -870,7 +876,7 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
     </div>
     <div class="hero-visual">
       <div class="hero-dash" id="heroDash">
-        <img src="assets/dashboard.jpg" alt="SalonOne 管理画面">
+        <img src="assets/dashboard.jpg" alt="Salon+ 管理画面">
       </div>
       <div class="hero-badge">
         <span class="dot"></span>
@@ -937,7 +943,7 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
     <div class="sec-head reveal">
       <span class="eyebrow">Before / After</span>
       <h2>ツールが分断されているほど、<br>経営者の時間は奪われていく。</h2>
-      <p>SalonOne は「分断」を「一気通貫」に変えます。</p>
+      <p>Salon+ は「分断」を「一気通貫」に変えます。</p>
     </div>
     <div class="split">
       <div class="panel before reveal-l">
@@ -951,7 +957,7 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
         </ul>
       </div>
       <div class="panel after reveal-r">
-        <h3>◎ SalonOne 導入後</h3>
+        <h3>◎ Salon+ 導入後</h3>
         <ul>
           <li><span class="mk">✓</span>予約からカルテ・売上・広告まで一気通貫で管理</li>
           <li><span class="mk">✓</span>全店舗ダッシュボードでリアルタイムに把握</li>
@@ -1215,8 +1221,8 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
 <section class="block strengths" id="strengths">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Why SalonOne</span>
-      <h2>SalonOne が選ばれる、<br>6つの理由。</h2>
+      <span class="eyebrow">Why Salon+</span>
+      <h2>Salon+ が選ばれる、<br>6つの理由。</h2>
     </div>
     <div class="str-grid stagger">
       <div class="scard reveal" style="--i:0"><div class="no">01</div><h3>経営プラットフォーム</h3><p>予約システムではなく「経営のすべて」を一元化。分断されたツールから卒業できる。</p></div>
@@ -1235,7 +1241,7 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
     <div class="reveal">
       <span class="eyebrow">AI Management Support</span>
       <h2 style="font-size:clamp(24px,3.4vw,36px);font-weight:900;line-height:1.36;margin:16px 0 18px">管理するだけでなく、<br>AIが“次の一手”を提案する。</h2>
-      <p style="color:var(--ink-soft);font-size:15.5px;margin-bottom:26px">数字を眺めるだけの時代は終わり。SalonOneのAIは、データの変化を検知し、経営者が動くべきポイントを先回りで知らせます。</p>
+      <p style="color:var(--ink-soft);font-size:15.5px;margin-bottom:26px">数字を眺めるだけの時代は終わり。Salon+のAIは、データの変化を検知し、経営者が動くべきポイントを先回りで知らせます。</p>
       <a href="#offer" class="btn btn-gold">AI機能を6月限定価格で試す →</a>
     </div>
     <div class="ai-suggest reveal" id="aiSuggest">
@@ -1313,7 +1319,7 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <img src="assets/logo.png" alt="SalonOne" style="background:#fff;padding:8px 12px;border-radius:8px">
+        <img src="assets/logo-salonplus.svg" alt="Salon+" style="background:#fff;padding:14px 18px;border-radius:10px;height:72px;width:auto">
         <p>予約・カルテ・LINE・売上・労務・AI分析・POSまで。サロン経営のすべてを、ひとつに。</p>
       </div>
       <div class="foot-cols">
@@ -1323,7 +1329,7 @@ footer{background:#021713;color:#7fa599;padding:54px 0 40px;font-size:13px}
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 SalonOne. All rights reserved.</span>
+      <span>© 2026 Salon+. All rights reserved.</span>
       <span>経営を、ひとつに。</span>
     </div>
   </div>

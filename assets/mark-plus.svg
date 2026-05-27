@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Salon+ mark">
+  <style>
+    .s{font-family:'Fraunces','Cormorant Garamond','Playfair Display','Times New Roman',Georgia,serif;font-style:italic;font-weight:300;fill:#003B36}
+  </style>
+  <!-- italic S in deep green -->
+  <text x="48" y="76" text-anchor="middle" class="s" font-size="98">S</text>
+  <!-- gold + accent -->
+  <g stroke="#C9A86A" stroke-width="3.2" stroke-linecap="round">
+    <line x1="76" y1="22" x2="92" y2="22"/>
+    <line x1="84" y1="14" x2="84" y2="30"/>
+  </g>
+</svg>
